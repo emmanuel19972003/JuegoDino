@@ -7,11 +7,6 @@
 
 import SwiftUI
 
-struct SwiftUIView: View {
-    var body: some View {
-        planta()
-    }
-}
 struct planta:Shape{
     func path(in rect: CGRect) -> Path {
         Path{path in
@@ -31,8 +26,3 @@ struct planta:Shape{
     }
 }
 
-struct SwiftUIView_Previews: PreviewProvider {
-    static var previews: some View {
-        SwiftUIView()
-    }
-}
