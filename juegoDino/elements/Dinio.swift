@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 struct Dinio:Shape{
     func path(in rect: CGRect) -> Path {
         Path{path in

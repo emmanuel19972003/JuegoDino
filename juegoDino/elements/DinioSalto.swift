@@ -8,5 +8,57 @@
 import Foundation
 import SwiftUI
 
-
+struct DinioSalto: Shape{
+    func path(in rect: CGRect) -> Path {
+        Path{ path in
+            let x = rect.width
+            let y = rect.height
+            path.move(to: CGPoint(x: x*0.3 , y: y*1))
+            path.addLine(to: CGPoint(x: x*0.3 , y: y*0.8))
+            path.addLine(to: CGPoint(x: x*0.1 , y: y*0.6))
+            path.addLine(to: CGPoint(x: x*0.1 , y: y*0.3))
+            path.addLine(to: CGPoint(x: x*0.15 , y: y*0.3))
+            path.addLine(to: CGPoint(x: x*0.15 , y: y*0.45))
+            path.addLine(to: CGPoint(x: x*0.2 , y: y*0.55))
+            path.addLine(to: CGPoint(x: x*0.3 , y: y*0.55))
+            path.addLine(to: CGPoint(x: x*0.3 , y: y*0.1))
+            path.addLine(to: CGPoint(x: x*0.35 , y: y*0.1))
+            path.addLine(to: CGPoint(x: x*0.35, y: y*0.05))
+            path.addLine(to: CGPoint(x: x*0.7, y: y*0.05))
+            path.addLine(to: CGPoint(x: x*0.7, y: y*0.1))
+            path.addLine(to: CGPoint(x: x*0.8, y: y*0.1))
+            path.addLine(to: CGPoint(x: x*0.8, y: y*0.3))
+            path.addLine(to: CGPoint(x: x*0.6, y: y*0.3))
+            path.addLine(to: CGPoint(x: x*0.6, y: y*0.35))
+            path.addLine(to: CGPoint(x: x*0.7, y: y*0.35))
+            path.addLine(to: CGPoint(x: x*0.7, y: y*0.4))
+            path.addLine(to: CGPoint(x: x*0.5, y: y*0.4))
+            path.addLine(to: CGPoint(x: x*0.5, y: y*0.45))
+            path.addLine(to: CGPoint(x: x*0.6, y: y*0.45))
+            path.addLine(to: CGPoint(x: x*0.6, y: y*0.55))
+            path.addLine(to: CGPoint(x: x*0.55, y: y*0.55))
+            path.addLine(to: CGPoint(x: x*0.55, y: y*0.5))
+            path.addLine(to: CGPoint(x: x*0.5, y: y*0.5))
+            path.addLine(to: CGPoint(x: x*0.5, y: y*0.55))//add para la panza
+            path.addQuadCurve(
+                to: CGPoint(x: x*0.5, y: y*0.7),
+                control: CGPoint(x: x*0.58, y: y*0.65))
+            path.addLine(to: CGPoint(x: x*0.5, y: y*0.7))//interes 5,7
+            path.addLine(to: CGPoint(x: x*0.55, y: y*0.75))
+            path.addLine(to: CGPoint(x: x*0.55, y: y*0.95))
+            path.addLine(to: CGPoint(x: x*0.6, y: y*0.95))
+            path.addLine(to: CGPoint(x: x*0.6, y: y*1))
+            path.addLine(to: CGPoint(x: x*0.5, y: y*1))
+            path.addLine(to: CGPoint(x: x*0.5, y: y*0.85))
+            path.addLine(to: CGPoint(x: x*0.45, y: y*0.8))
+            path.addLine(to: CGPoint(x: x*0.35, y: y*0.85))
+            path.addLine(to: CGPoint(x: x*0.35, y: y*0.95))
+            path.addLine(to: CGPoint(x: x*0.4, y: y*0.95))
+            path.addLine(to: CGPoint(x: x*0.4, y: y*1))
+            path.closeSubpath()
+            
+            
+        }
+    }
+}
 
