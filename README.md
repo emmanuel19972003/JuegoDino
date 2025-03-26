@@ -16,7 +16,7 @@ Installation
 
 Clone the repository:
 
-git clone <repository_url>
+git clone git@github.com:emmanuel19972003/JuegoDino.git
 
 Open the project in Xcode.
 
